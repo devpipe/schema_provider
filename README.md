@@ -1,7 +1,7 @@
 
-# Provider
+# Schema Provider
 
-The `Provider` module is designed to simplify the process of creating RESTful CRUD routes for Ecto schemas in a Plug-based Elixir application. It automatically generates routes for listing, showing, creating, updating, and deleting resources, and also allows for custom route definitions.
+The `Schema Provider` module is designed to simplify the process of creating RESTful CRUD routes for Ecto schemas in a Plug-based Elixir application. It automatically generates routes for listing, showing, creating, updating, and deleting resources, and also allows for custom route definitions.
 
 ## Installation
 
@@ -10,7 +10,7 @@ To use `Provider` in your project, add it as a dependency in your `mix.exs`:
 ```elixir
 defp deps do
   [
-    {:provider, "~> 0.1.0"}
+    {:schema_provider, "~> 0.0.1"}
   ]
 end
 ```
@@ -28,7 +28,7 @@ You need to configure the Ecto Repo that `Provider` will use in your `config/con
 ```elixir
 import Config
 
-config :provider, repo: MyApp.Repo
+config :schema_provider, repo: MyApp.Repo
 ```
 
 ## Usage
